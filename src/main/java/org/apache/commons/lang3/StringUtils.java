@@ -340,6 +340,7 @@ public class StringUtils {
     public static String abbreviate(final String str, final String abbrevMarker, int offset, final int maxWidth) {
         if (isNotEmpty(str) && EMPTY.equals(abbrevMarker) && maxWidth > 0) {
             return substring(str, 0, maxWidth);
+
         }
         if (isAnyEmpty(str, abbrevMarker)) {
             return str;
